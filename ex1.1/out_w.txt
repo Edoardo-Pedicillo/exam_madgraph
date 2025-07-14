@@ -1,0 +1,269 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.3                 2025-06-12         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../MG5_aMC_v3_6_3/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/ex1_w.mg5
+The import format was not given, so we guess it as command
+generate w+ > all all
+No model currently active, so we import the Standard Model
+INFO: Restrict model sm with file ../../MG5_aMC_v3_6_3/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+INFO: Trying process: w+ > g w+ @1  
+INFO: Trying process: w+ > u d~ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > u s~ @1  
+INFO: Trying process: w+ > u b~ @1  
+INFO: Trying process: w+ > c d~ @1  
+INFO: Trying process: w+ > c s~ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > c b~ @1  
+INFO: Trying process: w+ > d~ t @1  
+INFO: Trying process: w+ > s~ t @1  
+INFO: Trying process: w+ > a w+ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > ve e+ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > ve mu+ @1  
+INFO: Trying process: w+ > ve ta+ @1  
+INFO: Trying process: w+ > vm e+ @1  
+INFO: Trying process: w+ > vm mu+ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > vm ta+ @1  
+INFO: Trying process: w+ > vt e+ @1  
+INFO: Trying process: w+ > vt mu+ @1  
+INFO: Trying process: w+ > vt ta+ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > t b~ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > z w+ @1  
+INFO: Process has 1 diagrams 
+INFO: Trying process: w+ > w+ h @1  
+INFO: Process has 1 diagrams 
+9 processes with 9 diagrams generated in 0.049 s
+Total: 9 processes with 9 diagrams
+output output_w
+INFO: directory /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w already exists.
+If you continue this directory will be deleted and replaced.
+Do you want to continue? [[4my[0m, n]
+[1;34mfound line : launch output_w[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: y[0m
+INFO: initialize a new directory: output_w 
+INFO: remove old information in output_w 
+INFO: Generating Helas calls for process: w+ > u d~ @1 
+INFO: Processing color information for process: w+ > u d~ @1 
+INFO: Combined process w+ > c s~ @1 with process w+ > u d~ @1 
+INFO: Generating Helas calls for process: w+ > a w+ @1 
+INFO: Processing color information for process: w+ > a w+ @1 
+INFO: Generating Helas calls for process: w+ > ve e+ @1 
+INFO: Reusing existing color information for process: w+ > ve e+ @1 
+INFO: Combined process w+ > vm mu+ @1 with process w+ > ve e+ @1 
+INFO: Generating Helas calls for process: w+ > vt ta+ @1 
+INFO: Reusing existing color information for process: w+ > vt ta+ @1 
+INFO: Generating Helas calls for process: w+ > t b~ @1 
+INFO: Reusing existing color information for process: w+ > t b~ @1 
+INFO: Generating Helas calls for process: w+ > z w+ @1 
+INFO: Reusing existing color information for process: w+ > z w+ @1 
+INFO: Generating Helas calls for process: w+ > w+ h @1 
+INFO: Reusing existing color information for process: w+ > w+ h @1 
+INFO: Creating files in directory P1_wp_udx 
+INFO: Generating Feynman diagrams for Process: w+ > u d~ @1 
+INFO: Creating files in directory P1_wp_awp 
+INFO: Generating Feynman diagrams for Process: w+ > a w+ @1 
+INFO: Creating files in directory P1_wp_veep 
+INFO: Generating Feynman diagrams for Process: w+ > ve e+ @1 
+INFO: Creating files in directory P1_wp_vttap 
+INFO: Generating Feynman diagrams for Process: w+ > vt ta+ @1 
+INFO: Creating files in directory P1_wp_tbx 
+INFO: Generating Feynman diagrams for Process: w+ > t b~ @1 
+INFO: Creating files in directory P1_wp_zwp 
+INFO: Generating Feynman diagrams for Process: w+ > z w+ @1 
+INFO: Creating files in directory P1_wp_wph 
+INFO: Generating Feynman diagrams for Process: w+ > w+ h @1 
+Generated helas calls for 7 subprocesses (7 diagrams) in 0.005 s
+Wrote files for 28 helas calls in 0.361 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 3 routines in  0.743 s
+save configuration file to /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+Output to directory /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w done.
+Type "launch" to generate events from this process, or see
+/nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w/README
+Run "open index.html" to see more information about this process.
+launch output_w
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.3                 2025-06-12         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w/Cards/me5_configuration.txt  
+INFO: load configuration from /nfs/users/edoardo.pedicillo/MG5_aMC_v3_6_3/input/mg5_configuration.txt  
+INFO: load configuration from /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+[1;34m                Note that since 2.3. The launch for 1>N pass in event generation
+                For efficient width computation see arXiv:1402.1178.[0m
+generate_events run_01
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [01mNot Avail.[0m        |
+| 2. Choose the detector simulation program    [1mdetector[0m = [01mNot Avail.[0m        |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'madspin=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse 0 value[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path]
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse 0 value[0m
+[1mINFO: Remember that Parton-Shower are not yet ready for such proton component definition (HW implementation in progress). [0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.13 [0m
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 10000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 21
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_wp_udx  
+INFO:     P1_wp_awp  
+INFO:     P1_wp_veep  
+INFO:     P1_wp_vttap  
+INFO:     P1_wp_tbx  
+INFO:     P1_wp_zwp  
+INFO:     P1_wp_wph  
+[1;34m P1_wp_tbx,P1_wp_zwp,P1_wp_wph SubProcesses doesn't have available phase-space.
+            Please check mass spectrum.[0m
+INFO:  Idle: 0,  Running: 0,  Completed: 4 [ current time: 18h33 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 4 [ current time: 18h33 ] 
+sum of cpu time of last step: 2 seconds
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Width :   2.048 +- 6.994e-09 GeV
+     Nb of events :  0
+ 
+INFO: End survey 
+refine 10000
+Creating Jobs
+INFO: Refine results to 10000 
+INFO: Generating 10000.0 unweighted events. 
+sum of cpu time of last step: 2 seconds
+INFO: Effective Luminosity 5859.5752784519 pb^-1 
+INFO: need to improve 3 channels 
+- Current estimate of cross-section: 2.04793 +- 6.994231344393749e-09
+    P1_wp_udx 
+    P1_wp_awp 
+    P1_wp_veep 
+    P1_wp_vttap 
+    P1_wp_tbx 
+    P1_wp_zwp 
+    P1_wp_wph 
+INFO:  Idle: 0,  Running: 13,  Completed: 0 [ current time: 18h33 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 13 [  0.48s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 10 seconds
+INFO: finish refine 
+refine 10000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+[1;34mGdirectory /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w/SubProcesses/P1_wp_awp/G1 has no events.lhe file. (no points passed cuts found)[0m
+combination of events done in 0.7042551040649414 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Width :   2.048 +- 7.043e-05 GeV
+     Nb of events :  10000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+more information in /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.1/output_w/index.html
+quit

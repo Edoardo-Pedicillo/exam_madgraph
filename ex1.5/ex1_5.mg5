@@ -1,0 +1,13 @@
+# LO
+generate p p > e+ e- [QCD]
+output output_pp_ee
+launch output_pp_ee
+2 # choose FO
+# edit FO_analyse_card.dat
+FO_ANALYSE = analysis_HwU_pp_lplm.o
+
+# NLO
+launch output_pp_ee
+# modify options
+1 # choose LO
+2 # choose FO

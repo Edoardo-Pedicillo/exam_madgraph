@@ -1,0 +1,5 @@
+generate h > all all
+output output_h
+launch output_h
+set MH 200
+set wh Auto

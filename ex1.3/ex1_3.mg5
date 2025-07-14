@@ -1,0 +1,4 @@
+import sm-full
+generate mu- > e- ve~ vm
+output output_mu_event
+launch output_mu_event

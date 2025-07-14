@@ -1,0 +1,3 @@
+generate w+ > all all
+output output_w
+launch output_w

@@ -1,0 +1,3 @@
+generate z > all all
+output output_z
+launch output_z

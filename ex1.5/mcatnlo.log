@@ -1,0 +1,9 @@
+gfortran -O -ffixed-line-length-132 -fno-automatic  -std=legacy -I/nfs/users/edoardo.pedicillo/exam_madgraph/ex1.5/output_pp_ee/MCatNLO/include  -c /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.5/output_pp_ee/MCatNLO/srcCommon/HwU.f -o /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.5/output_pp_ee/MCatNLO/objects/HwU.o
+pineappl_common.inc:14: Error: Can't open included file 'pineappl_maxproc.inc'
+make: *** [/nfs/users/edoardo.pedicillo/exam_madgraph/ex1.5/output_pp_ee/MCatNLO/Makefile_MadFKS:15: /nfs/users/edoardo.pedicillo/exam_madgraph/ex1.5/output_pp_ee/MCatNLO/objects/HwU.o] Error 1
+mv: cannot stat 'HW_EXE_DEFAULT': No such file or directory
+chmod: cannot access '/nfs/users/edoardo.pedicillo/exam_madgraph/ex1.5/output_pp_ee/MCatNLO/HW_EXE_DEFAULT': No such file or directory
+ 
+*****   Now ready for showering 10000 events with HERWIG6 
+ 
+mv: cannot stat 'HW_EXE_DEFAULT': No such file or directory
